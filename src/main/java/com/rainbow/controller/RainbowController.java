@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class bootController {
+public class RainbowController {
 	
 	@GetMapping("/")
 	public String main(Model model){
