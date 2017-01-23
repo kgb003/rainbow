@@ -54,3 +54,26 @@ public class DBConfiguration {
     public SqlSessionTemplate rainbowSqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
+	
+	
+	
+	
+	
+//	@Bean(name = "mailDataSource")
+//	@ConfigurationProperties(prefix = "db.mail")
+//	public DataSource mailDataSource() throws IOException {
+//		return DataSourceBuilder.create().build();
+//	}
+// 
+//	@Bean(name = "mysqlFactoryBean")
+//	public LocalContainerEntityManagerFactoryBean getFactoryBean(EntityManagerFactoryBuilder builder) throws IOException
+//	{
+//		return builder.dataSource(getDataSource()).packages("com.web.domain.mysql").build();
+//	}
+// 
+//	@Bean(name = "mysqlTransactionManager")
+//	PlatformTransactionManager getTransactionManager(EntityManagerFactoryBuilder builder) throws IOException
+//	{
+//		return new JpaTransactionManager(getFactoryBean(builder).getObject());
+//	}
+}
